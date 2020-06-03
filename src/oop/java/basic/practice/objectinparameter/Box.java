@@ -4,12 +4,32 @@ public class Box {
     private double width;
     private double height;
     private double length;
+//    private double weigth;
+
+//    public double getWeigth() {
+//        return weigth;
+//    }
+//
+//    public void setWeigth(double weigth) {
+//        this.weigth = weigth;
+//    }
+
+    public void showInfo() {
+        System.out.println(width + ", " + height + ", " + length );
+    }
 
     public Box(double width, double height, double length) {
         this.width = width;
         this.height = height;
         this.length = length;
     }
+
+//    public Box(double width, double height, double length, double weigth) {
+//        this.width = width;
+//        this.height = height;
+//        this.length = length;
+//        this.weigth = weigth;
+//    }
 
     public Box(double size) {
         width = size;
@@ -44,7 +64,7 @@ public class Box {
     }
 
     public Box increase(int i) {
-        return new Box(width *i, height * i, length * i);
+        return new Box(width * i, height * i, length * i);
     }
 
     public Box sumBox(Box box) {
